@@ -1,0 +1,291 @@
+/* *{
+    border: 1px solid red;
+} */
+/******Responsive****/
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .starProd{
+        width: 40%;
+    }
+    
+}
+@media screen and (max-width:767px) {
+    header h1{
+        display: none;
+        
+   }
+   .btos{
+    font-size: 2rem;
+    margin-right: .5rem;
+    }
+    card{
+        width:45%;
+       }
+       
+       .starProds{
+        width: 100%;
+        align-items: center;
+       }
+       .starProd{
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 0;
+        -ms-flex-align: center;
+        justify-content: center;
+        
+    }
+    .prodDetails{
+        margin: 1.5rem 0 0 0;
+        padding: 0;
+        width: 100%;
+        height: auto;
+    }
+    .prodDetails h3{
+        font-size: 1rem;
+        margin: 0;
+    }
+    .prodDetails button{
+        width: 100%;
+        height: 60px;
+    }
+}
+
+    
+@media screen and (max-width: 320px) {
+    
+    
+    #logo{
+        height: 55px;
+        
+    }
+    .btos{
+        margin-right: .25rem;
+    }
+    .card{
+        width:100%;
+        margin:0;
+
+    }
+    .card a{
+        display: none;
+    }
+
+    
+}
+
+/******Header*****/
+header {
+    background-color: blue;
+    width: 100%;
+    height: 100px;
+    padding: 1rem;
+}
+
+
+
+.btos {
+    background-color: transparent;
+    border: none;
+    font-size: 40pt;
+    color: white;
+    font-weight: bold;
+    margin-right: 1rem;
+    box-shadow: #333 0 0 5rem;
+    border-radius: .5rem;
+ }
+.btos:hover{
+    color: blue;
+}
+
+#logo{
+    height: 75px;
+    
+}
+header h1{
+    color: #333;
+    text-shadow: red 0 0 1rem;
+}
+
+/******* SearchBar ********/
+#oscuro{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333333d6;
+    z-index: 999;
+    
+}
+.searchBar{
+    border-radius: .7rem;
+    width: 35%;
+    position: absolute;
+    right: 10px;
+    
+    
+}
+
+/******LoginForm************/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 4; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    color: #fff;
+    text-shadow: 0 0 1rem red;
+    font-size: 50px;
+    font-weight: bold;
+    background-color: black;
+    border-radius: .5rem;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  
+  /* Close button on hover */
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  }
+
+.animate_btos{
+    -webkit-animation: animation_btos 1s;
+    animation: animation_btos 1s;
+}
+@-webkit-keyframes animation_btos{
+    from{
+    width: 0;
+    height: 0;
+    }
+    to{
+    width: 100%;
+    height: 100%;
+    }
+    }
+
+@keyframes animation_btos{
+from{
+width: 0;
+height: 0;
+}
+to{
+width: 100%;
+height: 100%;
+}
+}
+  
+  /* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  /* Avatar image */
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+
+/**************************/
+
+/*****Contenido Principal****/
+main {
+    padding: 1rem;
+    font-size: 28pt;
+    background: orange url("../img/fondo2.jpg");
+
+}
+/*****Cintilla de Categorias****/
+.h3_cat{
+    padding: 2rem 2rem;
+    background-color: blueviolet;
+    margin: 1rem 0;
+}
+.card{
+    box-shadow: #333 .2rem .2rem 1rem;
+}
+/****Productos Estrella****/
+.starProd{
+    width: 45%;
+    border-top: 1px dotted #333;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.prodFrame{
+    width: 200px;
+    height: 200px;
+    border: purple solid .37rem;
+    border-radius: 125px;
+    padding: 1rem;
+}
+.imgProdStar{
+    width: 100%;
+    height: 100%;
+    border: palevioletred solid .3rem;
+    border-radius: 125px;
+    background: #fff url("../img/compra.png") no-repeat center center;
+    background-size: 95%;
+}
+.prodDetails{
+    max-width: 50%;
+    height: 200px;
+    padding: .5rem;
+}
+.prodDetails h3{
+    color: white;
+    background-color: purple;
+    border-radius: .3rem;
+    padding: 1rem;
+    text-shadow: #333 .2rem .2rem .3rem;
+}
+.prodDetails p{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+/****Footer*****/
+footer {
+    background-color: blue;
+    width: 100%;
+    height: 50px;
+    color: white;
+}
+
